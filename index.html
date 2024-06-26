@@ -16,7 +16,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
 
   <!-- 
     - google font link
@@ -29,6 +29,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- 
     - preload images
@@ -48,7 +49,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo-dark.svg" width="64" height="24" alt="Portfolio home">
+        <img src="./assets/images/name.png" width="80" height="35" alt="Portfolio home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -88,40 +89,28 @@
         </ul>
 
         <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+          <a href="mailto:mondaladitya060203@gmail.com" class="contact-link">mondaladitya060203@gmail.com</a>
 
-          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+          <a href="tel:+919331505689" class="contact-link">+91 9331505689</a>
         </div>
 
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="social-link">
+              <ion-icon name="logo-linkedin"><img src="./assets/images/linkedin.svg" alt="linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/CodingWizard07" class="social-link">
+              <ion-icon name="logo-github"><img src="./assets/images/github.svg" alt="github"></ion-icon>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
+              <ion-icon name="logo-instagram"><img src="./assets/images/instagram.svg" alt="instagram"></ion-icon>
             </a>
           </li>
 
@@ -156,25 +145,61 @@
             <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Portfolio" class="w-100"
               data-reveal="top">
 
-            <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
-              data-reveal="top" data-reveal-delay="0.25s">
           </figure>
 
           <div class="hero-content">
 
             <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm User Interface Designer & Developer.
+              <p class="first-line">Hello, I'm Aditya Mondal</p>
+              <p class="sec-line">and I am a ..</p>
+              <!-- Element to contain animated typing -->
+              <span id="typing-animation" style="color: #9900ff;"></span>
+
+              <script>
+
+                // Initialize the typing animation
+                const typingAnimationElement = document.getElementById('typing-animation');
+
+                // Create an array of typing text
+                const typingTexts = [
+                  'Techy   ',
+                  'Web Developer  ',
+                  'Coder  '
+                ];
+
+                // Create a function to display the typing animation for a given text
+                function playTypingAnimation(text) {
+                  // Loop through each character and add it to the element
+                  for (let i = 0; i < text.length; i++) {
+                    setTimeout(() => {
+                      typingAnimationElement.textContent += text[i];
+                    }, i * 140); // Increase the delay to slow down the typing animation
+                  }
+
+                  // Once the animation is complete, reset the text and start over
+                  setTimeout(() => {
+                    typingAnimationElement.textContent = '';
+                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                  }, text.length * 220);
+                }
+
+                // Start the typing animation loop
+                playTypingAnimation(typingTexts[0]);
+
+              </script>
+
+
             </h1>
 
             <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Hello! I'm Portfolio, a freelance user interface designer & developer based in London. I’m very passionate
-              about the work that I do.
+              Enthusiastic frontend web developer dedicated to creating smooth digital experiences. With expertise in
+              frontend technologies, I deliver innovative solutions that prioritize user satisfaction.
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
               <a href="#" class="btn btn-primary">See My Works</a>
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+              <a href="#" class="btn btn-secondary">Download Resume </a>
             </div>
 
           </div>
@@ -196,13 +221,17 @@
           <div class="wrapper">
 
             <div data-reveal="left">
-              <h2 class="h2 section-title">What I Do?</h2>
+              <h2 class="h2 section-title">About me</h2>
 
               <p class="section-text">
-                Duis mollis est commodo luctus nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis
-                risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
-                magna, vel scelerisque nisl.
+              <ul>
+                <li class="section-info">Front-End Developer</li>
+                <li class="section-info"><b>Experience :</b> 6 Months</li>
+                <li class="section-info"><b>Gmail :</b> mondaladitya060203@gmail.com</li>
+                <li class="section-info"><b>Location :</b> Kolkata, West Bengal, India</li>
+              </ul>
               </p>
+
             </div>
 
             <ul class="progress-list" data-reveal="right">
@@ -210,13 +239,13 @@
               <li class="progress-item">
 
                 <div class="label-wrapper">
-                  <p>Web Design</p>
+                  <p>Web Development</p>
 
-                  <span class="span">100 %</span>
+                  <span class="span">70 %</span>
                 </div>
 
                 <div class="progress">
-                  <div class="progress-fill" style="width: 100%; background-color: #c7b1dd"></div>
+                  <div class="progress-fill" style="width: 70%; background-color: #c7b1dd"></div>
                 </div>
 
               </li>
@@ -224,7 +253,7 @@
               <li class="progress-item">
 
                 <div class="label-wrapper">
-                  <p>Mobile Design</p>
+                  <p>C /C++</p>
 
                   <span class="span">80 %</span>
                 </div>
@@ -238,13 +267,13 @@
               <li class="progress-item">
 
                 <div class="label-wrapper">
-                  <p>Development</p>
+                  <p>Python</p>
 
-                  <span class="span">85 %</span>
+                  <span class="span">80 %</span>
                 </div>
 
                 <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+                  <div class="progress-fill" style="width: 80%; background-color: #c6c332"></div>
                 </div>
 
               </li>
@@ -252,13 +281,27 @@
               <li class="progress-item">
 
                 <div class="label-wrapper">
-                  <p>SEO</p>
+                  <p>Data Analytics</p>
 
-                  <span class="span">90 %</span>
+                  <span class="span">75 %</span>
                 </div>
 
                 <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
+                  <div class="progress-fill" style="width: 75%; background-color: #b0d4c1"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>SQL</p>
+
+                  <span class="span">80 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #e3a6b6"></div>
                 </div>
 
               </li>
@@ -266,81 +309,26 @@
             </ul>
 
           </div>
-
-          <ul class="grid-list">
-
-            <li data-reveal="bottom">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
-                </div>
-
-                <h3 class="h4 card-title">Web Design</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
-                </div>
-
-                <h3 class="h4 card-title">Mobile Design</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.5s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
-                    alt="web development icon">
-                </div>
-
-                <h3 class="h4 card-title">Development</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
-                </div>
-
-                <h3 class="h4 card-title">SEO</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
+          <div class="dynamic-load">
+            <!-- <p class="hello">
+              hello
+            </p>
+            <p class="world">
+              world
+            </p> -->
+            <p class="section-dynamic">
+              <span class="number" data-number="30">0</span> <span>+</span>
+              <span>&nbsp; Projects completed</span>
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary">LinkedIn</a>
+            </p>
+          </div>
+          
         </div>
+
+
+
       </section>
 
 
@@ -360,7 +348,7 @@
               <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
 
               <p class="section-text">
-                Check out some of my latest projects with creative ideas.
+                Check out some of my latest projects.
               </p>
             </div>
 
@@ -377,11 +365,12 @@
 
                   <p class="card-tag" style="color: #a07cc5">Web Design</p>
 
-                  <h3 class="h3 card-title">Snowlake Theme</h3>
+                  <h3 class="h3 card-title"> Building the Tesla Clone with ReactJS</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper. Fusce dapibus tellus cursus.
+                    Built a Tesla Clone web application using ReactJS, integrating Redux for state management and Styled
+                    Components for dynamic styling. Implemented responsive and interactive user interface features,
+                    closely mirroring the design and functionality of the official Tesla website.
                   </p>
 
                   <a href="#" class="btn-text" style="color: #a07cc5">
@@ -392,8 +381,8 @@
 
                 </div>
 
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-1.png" width="650" height="370" loading="lazy" alt="Web Design"
+                <figure class="card-banner " data-reveal="right">
+                  <img src="./assets/images/project_1.png" width="650" height="370" loading="lazy" alt="Web Design"
                     class="w-100">
                 </figure>
 
@@ -405,13 +394,13 @@
 
                 <div class="card-content" data-reveal="right">
 
-                  <p class=" card-tag" style="color: #3f78e0">Mobile Design</p>
+                  <p class=" card-tag" style="color: #3f78e0">Image Processing</p>
 
-                  <h3 class="h3 card-title">Budget App</h3>
+                  <h3 class="h3 card-title">Lane Detection using OpenCV</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper. Fusce dapibus tellus cursus.
+                    Developed a lane detection system for freeway videos using Python with OpenCV. Implemented
+                    perspective transformation and sliding window techniques for accurate lane boundary identification.
                   </p>
 
                   <a href="#" class="btn-text" style="color: #3f78e0">
@@ -423,7 +412,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/project-2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                  <img src="./assets/images/project_2.png" width="600" height="367" loading="lazy" alt="Web Design"
                     class="w-100">
                 </figure>
 
@@ -435,13 +424,14 @@
 
                 <div class="card-content" data-reveal="left">
 
-                  <p class=" card-tag" style="color: #7cb798">Web Design</p>
+                  <p class=" card-tag" style="color: #7cb798">Machine Learning</p>
 
-                  <h3 class="h3 card-title">Missio Theme</h3>
+                  <h3 class="h3 card-title">Self-Driving Car</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere porta consectetur cursus porta lobortis. Scelerisque
-                    id ligula felis.
+                    Developed a self-driving car system using Python, TensorFlow, and OpenCV.Trained a neural network to
+                    enable autonomous navigation, ensuring real-time decision-making and Achieved a robust and scalable
+                    solution capable of adapting to diverse driving conditions.
                   </p>
 
                   <a href="#" class="btn-text" style="color: #7cb798">
@@ -453,7 +443,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-3.png" width="600" height="367" loading="lazy" alt="Web Design"
+                  <img src="./assets/images/project_3.png" width="600" height="367" loading="lazy" alt="Web Design"
                     class="w-100">
                 </figure>
 
@@ -465,13 +455,14 @@
 
                 <div class="card-content" data-reveal="left">
 
-                  <p class=" card-tag" style="color: #d16b86">Mobile Design</p>
+                  <p class=" card-tag" style="color: #d16b86">Data Visualization</p>
 
-                  <h3 class="h3 card-title">Storage App</h3>
+                  <h3 class="h3 card-title">California Sales</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper.
+                    Integrated Power BI with XAMPP databases to conduct comprehensive sales analysis. Generated
+                    actionable insights and visualizations to facilitate informed decision-making processes, enhancing
+                    the ability to track performance and identify growth opportunities.
                   </p>
 
                   <a href="#" class="btn-text" style="color: #d16b86">
@@ -483,7 +474,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-4.png" width="620" height="370" loading="lazy" alt="Mobile Design"
+                  <img src="./assets/images/Project_4.JPG" width="620" height="370" loading="lazy" alt="Mobile Design"
                     class="w-100">
                 </figure>
 
@@ -514,7 +505,7 @@
                 <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
               </div>
 
-              <h2 class="h2 section-title">If you like what you see, let's work together.</h2>
+              <h2 class="h2 section-title">Any Queries.. Just Drop me a mail</h2>
 
               <p class="section-text">
                 I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to me from
@@ -557,38 +548,26 @@
     <div class="container">
 
       <p class="copyright">
-        © 2022 codewithsadee. All rights reserved.
+        © 2024 Aditya's PortFolio. All rights reserved.
       </p>
 
       <ul class="social-list">
 
         <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
+          <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="social-link">
+            <ion-icon name="logo-linkedin"><img src="./assets/images/linkedin.svg" alt="linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/CodingWizard07" class="social-link">
+            <ion-icon name="logo-github"><img src="./assets/images/github.svg" alt="github"></ion-icon>
           </a>
         </li>
 
         <li>
           <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-dribbble"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-instagram"><img src="./assets/images/instagram.svg" alt="instagram"></ion-icon>
           </a>
         </li>
 
