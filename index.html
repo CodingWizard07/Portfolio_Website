@@ -67,23 +67,23 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="#Home" class="navbar-link  active">Home</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About</a>
+            <a href="#About" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Projects</a>
+            <a href="#Projects" class="navbar-link">Projects</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="navbar-link">Blog</a>
-          </li>
+          </li> -->
 
           <li>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="#Contact" class="navbar-link">Contact</a>
           </li>
 
         </ul>
@@ -97,19 +97,20 @@
         <ul class="social-list">
 
           <li>
-            <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="social-link">
-              <ion-icon name="logo-linkedin"><img src="./assets/images/linkedin.svg" alt="linkedin"></ion-icon>
+            <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="social-link" alt="linkedin"
+              target="_blank" rel="My linkedin profile">
+              <ion-icon name="logo-linkedin"><img src="./assets/images/linkedin.svg"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="https://github.com/CodingWizard07" class="social-link">
+            <a href="https://github.com/CodingWizard07" class="social-link" target="_blank" rel="My github profile">
               <ion-icon name="logo-github"><img src="./assets/images/github.svg" alt="github"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" target="_blank" rel="My instagram profile">
               <ion-icon name="logo-instagram"><img src="./assets/images/instagram.svg" alt="instagram"></ion-icon>
             </a>
           </li>
@@ -138,11 +139,11 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
+      <section id="Home" class="section hero" aria-label="home">
         <div class="container">
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Portfolio" class="w-100"
+            <img src="./assets/images/profile-picture.jpg" width="560" height="540" alt="Portfolio" class="w-100"
               data-reveal="top">
 
           </figure>
@@ -197,9 +198,10 @@
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#" class="btn btn-primary">See My Works</a>
+              <a href="#Projects" class="btn btn-primary">See My Works</a>
 
-              <a href="#" class="btn btn-secondary">Download Resume </a>
+              <a href="https://drive.google.com/file/d/16tNqR7um1Z5Bhzh8i5mOU5LzYXTQ3fYW/view?usp=sharing"
+                class="btn btn-secondary" target="_blank" rel="My Resume">Download Resume </a>
             </div>
 
           </div>
@@ -215,15 +217,16 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about">
+      <section id="About" class="section about" aria-label="about">
         <div class="container">
 
           <div class="wrapper">
-
+            
             <div data-reveal="left">
               <h2 class="h2 section-title">About me</h2>
-
+                
               <p class="section-text">
+
               <ul>
                 <li class="section-info">Front-End Developer</li>
                 <li class="section-info"><b>Experience :</b> 6 Months</li>
@@ -232,7 +235,7 @@
               </ul>
               </p>
 
-            </div>
+            </div>  
 
             <ul class="progress-list" data-reveal="right">
 
@@ -307,24 +310,33 @@
               </li>
 
             </ul>
-
           </div>
-          <div class="dynamic-load">
+            <p class="about-me">
+              I am a passionate and versatile technologist with expertise in programming languages like C, C++,
+              Python, and Java. With a solid foundation in web development and database management, coupled with
+              proficiency in analytics tools and frameworks,Machine Learning ,Data Analytics. I strive for excellence
+              in every project. I'm dedicated to pushing boundaries and contributing to innovative solutions in the
+              ever-evolving field of technology.
+            </p>
+          <!-- <div class="dynamic-load"> -->
             <!-- <p class="hello">
               hello
             </p>
             <p class="world">
               world
             </p> -->
-            <p class="section-dynamic">
+            <!-- <p class="section-dynamic">
               <span class="number" data-number="30">0</span> <span>+</span>
               <span>&nbsp; Projects completed</span>
             </p>
             <p>
-              <a href="#" class="btn btn-secondary">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="btn btn-secondary" alt="linkedin"
+                target="_blank" rel="My linkedin profile">LinkedIn</a>
+
+              </a>
             </p>
-          </div>
-          
+          </div> -->
+
         </div>
 
 
@@ -339,7 +351,7 @@
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section id="Projects" class="section project" aria-labelledby="project-label">
         <div class="container">
 
           <div class="title-wrapper" data-reveal="top">
@@ -352,7 +364,8 @@
               </p>
             </div>
 
-            <a href="#" class="btn btn-secondary">See All Projects</a>
+            <a href="https://github.com/stars/CodingWizard07/lists/my-projects" class="btn btn-secondary"
+              target="_blank" rel="My github projects">See All Projects</a>
 
           </div>
 
@@ -403,7 +416,8 @@
                     perspective transformation and sliding window techniques for accurate lane boundary identification.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #3f78e0">
+                  <a href="https://github.com/CodingWizard07/Lane_Detection" class="btn-text" style="color: #3f78e0"
+                    target="_blank" rel="lane detection">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -434,7 +448,8 @@
                     solution capable of adapting to diverse driving conditions.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #7cb798">
+                  <a href="https://github.com/CodingWizard07/Self_Driving_Car" class="btn-text" style="color: #7cb798"
+                    target="_blank" rel="self-driving Car">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -465,7 +480,8 @@
                     the ability to track performance and identify growth opportunities.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #d16b86">
+                  <a href="https://github.com/CodingWizard07/California-Sales-Report" class="btn-text"
+                    style="color: #d16b86" target="_blank" rel="sales report">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -494,7 +510,7 @@
         - #CONTACT
       -->
 
-      <section class="section contact" aria-label="contact">
+      <section id="Contact" class="section contact" aria-label="contact">
         <div class="container">
 
           <div class="contact-card">
@@ -554,19 +570,20 @@
       <ul class="social-list">
 
         <li>
-          <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="social-link">
-            <ion-icon name="logo-linkedin"><img src="./assets/images/linkedin.svg" alt="linkedin"></ion-icon>
+          <a href="https://www.linkedin.com/in/aditya-mondal-1599b7264/" class="social-link" alt="linkedin"
+            target="_blank" rel="My linkedin profile">
+            <ion-icon name="logo-linkedin"><img src="./assets/images/linkedin.svg"></ion-icon>
           </a>
         </li>
 
         <li>
-          <a href="https://github.com/CodingWizard07" class="social-link">
+          <a href="https://github.com/CodingWizard07" class="social-link" target="_blank" rel="My github profile">
             <ion-icon name="logo-github"><img src="./assets/images/github.svg" alt="github"></ion-icon>
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
+          <a href="#" class="social-link" target="_blank" rel="My instagram profile">
             <ion-icon name="logo-instagram"><img src="./assets/images/instagram.svg" alt="instagram"></ion-icon>
           </a>
         </li>
