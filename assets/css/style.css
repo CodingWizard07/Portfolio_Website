@@ -306,6 +306,9 @@ body.nav-active { overflow: hidden; }
   align-items: center;
 }
 
+.navbar-top > .logo > img {
+  border-radius: 50%;
+}
 .nav-close-btn {
   background-color: var(--white_a8);
   color: var(--white);
